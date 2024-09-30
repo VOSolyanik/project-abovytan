@@ -4,15 +4,21 @@
   | default @import url()
   |============================
 */
+/* Utils styles */
+@import url('./utils/reset.css');
+@import url('./utils/animations.css');
+
 /* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url('./common/base.css');
+@import url('./common/container.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import url('./sections/header.css');
+@import url('./sections/hero.css');
+@import url('./sections/about-us.css');
+@import url('./sections/lessons.css');
+@import url('./sections/proposal.css');
+@import url('./sections/teachers.css');
+@import url('./sections/application.css');
+@import url('./sections/reviews.css');
+@import url('./sections/footer.css');

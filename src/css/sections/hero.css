@@ -1,0 +1,66 @@
+.hero {
+}
+
+.hero-container {
+  padding: 425px 20px 14px;
+  background-color: #d3d3d3;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      357deg,
+      rgba(0, 0, 0, 0.4) 39.23%,
+      rgba(0, 0, 0, 0) 66.28%
+    ),
+    url('../img/hero/bg_mob.jpg');
+}
+@media (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      url('../img/hero/bg_mob@2x.jpg');
+  }
+}
+.hero-title {
+  color: var(--white-color);
+  font-size: 38px;
+  line-height: 1.05;
+  max-width: 295px;
+  margin-bottom: 40px;
+
+  span {
+    /* Need add new color to :root */
+    color: var(--secondary-green-color, #bee8cc);
+  }
+}
+
+.hero-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 295px;
+  padding: 14px 78px;
+  border-radius: 12px;
+  background: var(--green-color);
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.71;
+  transition: var(--transition-duration) var(--transition-function);
+  transition-property: background-color;
+}
+.hero-link:hover,
+.hero-link:focus {
+  /* Need add new color to :root */
+  background: var(--green-hover-color, #38ae5f);
+}
+
+.hero-scroll-down {
+}
+
+.hero-icon {
+}

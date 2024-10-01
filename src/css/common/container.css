@@ -13,12 +13,9 @@
   }
 }
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1152px) {
   .container {
-    max-width: 1280px;
+    max-width: 1152px;
     padding: 0 64px;
-  }
-  .container.extra-padding {
-    padding: 0 128px;
   }
 }

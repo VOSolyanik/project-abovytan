@@ -15,6 +15,10 @@
   --transition-duration: 250ms;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -30,7 +34,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  scroll-behavior: smooth;
 
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);

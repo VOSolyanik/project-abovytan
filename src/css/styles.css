@@ -11,8 +11,9 @@
 /* Common styles */
 @import url('./common/base.css');
 @import url('./common/container.css');
-@import url('./common/card-set.css');
 @import url('./common/section.css');
+@import url('./common/card-set.css');
+@import url('./common/buttons.css');
 
 /* Sections style */
 @import url('./sections/header.css');

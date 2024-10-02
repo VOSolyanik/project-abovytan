@@ -1,0 +1,74 @@
+.lessons-list-item {
+  border: 1px solid var(--green-color);
+  border-radius: 16px;
+  padding: 40px 20px;
+  min-height: 400px;
+  max-width: 335px;
+}
+@media only screen and (min-width: 768px) {
+  .lessons-list-item {
+    border-radius: 30px;
+    padding: 32px 16px;
+    min-height: 404px;
+    max-width: 336px;
+  }
+}
+@media only screen and (min-width: 1152px) {
+  .lessons-list-item {
+    padding: 32px;
+    max-width: 320px;
+  }
+}
+.lessons-list-item.accent {
+  color: var(--white-color);
+  background-color: var(--green-color);
+}
+.lessons-list-item.accent .secondary-text {
+  color: rgba(var(--white-color-rgb), 0.7);
+}
+.lessons-list-item .secondary-text {
+  flex-grow: 1;
+  margin-bottom: unset;
+}
+@media only screen and (min-width: 768px) {
+  .lessons-list-item .secondary-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.lessons-list-item .btn {
+  max-width: 295px;
+}
+@media only screen and (min-width: 768px) {
+  .lessons-list-item .btn {
+    max-width: 304px;
+  }
+}
+@media only screen and (min-width: 1152px) {
+  .lessons-list-item .btn {
+    max-width: 256px;
+  }
+}
+.lessons-list-heading {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  margin-bottom: 16px;
+}
+.lessons-list-price {
+  font-size: 32px;
+  line-height: 1.125;
+  letter-spacing: -0.02rem;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .lessons-list-price {
+    line-height: 1.375;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (min-width: 1152px) {
+  .lessons-list-price {
+    margin-bottom: 16px;
+  }
+}

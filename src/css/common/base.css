@@ -1,12 +1,14 @@
 :root {
-  --primary-font: "Manrope", sans-serif;
+  --primary-font: 'Manrope', sans-serif;
 
   --charcoal-black-rgb: 18, 20, 23;
   --charcoal-black-color: rgb(var(--charcoal-black-rgb));
   --white-color: #fff;
-  --green-color: #4DC274;
-  --light-green-color: #D4FDE1;
-  --gray-color: #F3F5F6;
+  --green-color: #4dc274;
+  --light-green-color: #d4fde1;
+  --light-green-underline: #bee8cc;
+  --gray-color: #f3f5f6;
+  --charcoal-lite: rgba(var(--charcoal-black-rgb), 0.5);
 
   --primary-text-color: var(--charcoal-black-color);
   --primary-bg-color: var(--white-color);
@@ -34,35 +36,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 main {

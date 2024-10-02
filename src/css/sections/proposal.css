@@ -1,0 +1,104 @@
+.proposal-container-gradient {
+  background: linear-gradient(to right, var(--green-color), var(--light-green-underline));
+  border-radius: 16px;
+  padding-bottom: 64px;
+}
+
+.proposal-section-heading {
+  padding: 40px 20px;
+  text-align: left;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 38px;
+  color: var(--white-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .proposal-section-heading {
+    padding: 64px 32px 32px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+.proposal-section-heading-color {
+  color: var(--light-green-underline);
+}
+
+.proposal-container-info {
+  position: relative;
+  margin: 0 20px;
+  border-radius: 16px;
+  z-index: 3;
+}
+
+.proposal-container-info::after, .proposal-container-info::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.proposal-container-info::after {
+  top: 0px;
+  left: 0px;
+  transform: rotate(-11deg);
+  background-color: var(--light-green-color);
+  z-index: -1;
+}
+.proposal-container-info::before {
+  top: 0px;
+  left: 0px;
+  transform: rotate(9deg);
+  background-color: var(--white-color);
+  opacity: 50%;
+  z-index: 2;
+}
+
+.proposal-container-info-main {
+  z-index: 4;
+  background-color: white;
+  position: relative;
+  padding: 40px 20px;
+  border-radius: 16px;
+}
+
+.proposal-content-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.proposal-content-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.proposal-content-item-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.proposal-checkmark-icon {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  min-width: 20px;
+  min-height: 20px;
+  max-width: 20px;
+  border-radius: 50%;
+  max-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}

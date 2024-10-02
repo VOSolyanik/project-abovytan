@@ -14,8 +14,8 @@
 .card-set-item {
   width: calc((100% - 32px * (var(--items) - 1)) / var(--items));
   display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
 }
 

@@ -15,6 +15,7 @@
 @import url('./common/card-set.css');
 @import url('./common/buttons.css');
 @import url('./common/form.css');
+@import url('./common/basic.css');
 
 /* Components styles */
 @import url('./components/social-links.css');

@@ -1,0 +1,36 @@
+.teachers {
+  font-family: var(--primary-font);
+}
+
+.teachers-list-item.card-set-item {
+  --items: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .teachers-list-item.card-set-item {
+    --items: 2;
+  }
+}
+
+@media only screen and (min-width: 1152px) {
+  .teachers-list-item.card-set-item {
+    --items: 4;
+  }
+}
+
+.teachers-list-item-photo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+}
+
+.teachers-list-item-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--charcoal-black-color);
+  text-align: center;
+  letter-spacing: -0.02em;
+}

@@ -1,7 +1,7 @@
 .hero {
 }
 
-.hero-container {
+.hero-wrapper {
   padding: 425px 20px 14px;
   background-color: #d3d3d3;
   border-radius: 16px;
@@ -13,16 +13,84 @@
       rgba(0, 0, 0, 0.4) 39.23%,
       rgba(0, 0, 0, 0) 66.28%
     ),
-    url('../img/hero/bg_mob.jpg');
+    image-set(
+      url('../images/hero/bg_mob.webp') type('image/webp'),
+      url('../images/hero/bg_mob.jpg') type('image/jpg')
+    );
 }
+
 @media (min-resolution: 192dpi) {
-  .hero-container {
+  .hero-wrapper {
     background-image: linear-gradient(
         357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
         rgba(0, 0, 0, 0) 66.28%
       ),
-      url('../img/hero/bg_mob@2x.jpg');
+      image-set(
+        url('../images/hero/bg_mob@2x.webp') type('image/webp'),
+        url('../images/hero/bg_mob@2x.jpg') type('image/jpg')
+      );
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero-wrapper {
+    padding-top: 260px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      image-set(
+        url('../images/hero/bg_tab.webp') type('image/webp'),
+        url('../images/hero/bg_tab.jpg') type('image/jpg')
+      );
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-wrapper {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      image-set(
+        url('../images/hero/bg_tab@2x.webp') type('image/webp'),
+        url('../images/hero/bg_tab@2x.jpg') type('image/jpg')
+      );
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-wrapper {
+    padding-top: 164px;
+    padding-left: 64px;
+    padding-bottom: 32px;
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      image-set(
+        url('../images/hero/bg_desk.webp') type('image/webp'),
+        url('../images/hero/bg_desk.jpg') type('image/jpg')
+      );
+  }
+}
+
+@media only screen and (min-width: 1280px) and (min-resolution: 192dpi) {
+  .hero-wrapper {
+    background-image: linear-gradient(
+        357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%
+      ),
+      image-set(
+        url('../images/hero/bg_desk@2x.webp') type('image/webp'),
+        url('../images/hero/bg_desk@2x.jpg') type('image/jpg')
+      );
   }
 }
 .hero-title {
@@ -37,13 +105,26 @@
     color: var(--secondary-green-color, #bee8cc);
   }
 }
-
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 60px;
+    max-width: 488px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 60px;
+    max-width: 564px;
+    margin-bottom: 32px;
+  }
+}
 .hero-link {
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 295px;
-  padding: 14px 78px;
+  padding: 14px;
   border-radius: 12px;
   background: var(--green-color);
   color: var(--white-color);
@@ -58,23 +139,44 @@
   /* Need add new color to :root */
   background: var(--green-hover-color, #38ae5f);
 }
+@media screen and (min-width: 768px) {
+  .hero-link {
+    padding: 16px;
+    font-size: 18px;
+  }
+}
 
 .hero-scroll-down {
   margin-left: auto;
   margin-top: 20px;
-  background-color: white;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
+  width: 38px;
+  height: 38px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   text-decoration: none;
+  color: #38ae5f;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
 }
 .hero-scroll-down:hover,
 .hero-scroll-down:focus {
-  background: var(--green-hover-color, #38ae5f);
+  background-color: var(--green-hover-color, #38ae5f);
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .hero-scroll-down {
+    margin-top: 215px;
+    width: 48px;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-scroll-down {
+    margin-top: 83px;
+  }
 }
 .hero-icon {
+  fill: currentColor;
 }

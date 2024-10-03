@@ -10,21 +10,97 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css">
     <script type="module" crossorigin src="/project-abovytan/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-abovytan/assets/index-BiJ1E2wf.css">
+    <link rel="stylesheet" crossorigin href="/project-abovytan/assets/index-CTeYl3B5.css">
   </head>
   <body>
     <header class="header">
   <div class="container">
     <nav class="nav">
       <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/project-abovytan/assets/sprite-DFrBS1hQ.svg#logo"></use>
-        </svg>
+        english<span class="accent">excellence</span>.
       </a>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="#about-us">About us</a></li>
+        <li><a class="nav-link" href="#lessons">Our lessons</a></li>
+        <li><a class="nav-link" href="#teachers">Teachers</a></li>
+        <li><a class="nav-link" href="#reviews">Reviews</a></li>
+        <li><a class="nav-link" href="#footer">Contact us</a></li>
+      </ul>
     </nav>
+
+    <ul class="social-links nav-social">
+  <li class="social-link-item">
+    <a class="social-link" href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer">
+      <svg class="social-icon" width="24" height="24">
+        <use href="/project-abovytan/assets/sprite-DFrBS1hQ.svg#facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="social-link-item">
+    <a class="social-link" href="https://www.instagram.com/goitclub/" target="_blank" rel="noopener noreferrer">
+      <svg class="social-icon" width="24" height="24">
+        <use href="/project-abovytan/assets/sprite-DFrBS1hQ.svg#instagram"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="social-link-item">
+    <a class="social-link" href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener noreferrer">
+      <svg class="social-icon" width="24" height="24">
+        <use href="/project-abovytan/assets/sprite-DFrBS1hQ.svg#youtube"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+    <button class="mobile-menu-btn" type="button" data-menu-open>
+  <svg class="burger-icon" width="40" height="40">
+    <use href="/project-abovytan/assets/sprite-DFrBS1hQ.svg#burger"></use>
+  </svg>
+</button>
+<div class="mobile-menu-panel"  data-menu>
+  <button class="menu-close-btn" type="button" data-menu-close>
+    <svg class="close-icon" width="32" height="32">
+      <use href="/project-abovytan/assets/sprite-DFrBS1hQ.svg#close"></use>
+    </svg>
+  </button>
+  <nav class="mobile-nav">
+    <ul class="mobile-nav-menu">
+      <li><a class="mobile-nav-link" href="#about-us">About us</a></li>
+      <li><a class="mobile-nav-link" href="#lessons">Our lessons</a></li>
+      <li><a class="mobile-nav-link" href="#teachers">Teachers</a></li>
+      <li><a class="mobile-nav-link" href="#reviews">Reviews</a></li>
+      <li><a class="mobile-nav-link" href="#footer">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <ul class="social-links mobile-nav-social inverse">
+  <li class="social-link-item">
+    <a class="social-link" href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer">
+      <svg class="social-icon" width="24" height="24">
+        <use href="/project-abovytan/assets/sprite-DFrBS1hQ.svg#facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="social-link-item">
+    <a class="social-link" href="https://www.instagram.com/goitclub/" target="_blank" rel="noopener noreferrer">
+      <svg class="social-icon" width="24" height="24">
+        <use href="/project-abovytan/assets/sprite-DFrBS1hQ.svg#instagram"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="social-link-item">
+    <a class="social-link" href="https://www.youtube.com/c/GoIT" target="_blank" rel="noopener noreferrer">
+      <svg class="social-icon" width="24" height="24">
+        <use href="/project-abovytan/assets/sprite-DFrBS1hQ.svg#youtube"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+
+</div>
+<div class="mobile-menu-backdrop"  data-menu-backdrop></div>
+
   </div>
 </header>
-
 
     <main>
       <!-- Loads the specified .html file -->
@@ -33,7 +109,7 @@
     <h1>Discover the joy of learning English with us!</h1>
   </div>
 </section>
-      <section class="section about-us">
+      <section class="section about-us" id="about-us">
   <div class="container">
     <h2 class="section-heading">
       About <span class="brand-underline">Us</span>
@@ -74,10 +150,14 @@
   </div>
 </section>
 
+      <section class="section" id="lessons">
+  <div class="container">
+    <h2 class="section-heading">Our Lessons</h2>
+  </div>
+</section>
       
-      
-      <section class="section teachers">
-    <div class="container">
+      <section class="section teachers" id="teachers">
+  <div class="container">
     <h2 class="teachers-title section-heading">Meet our <span class="brand-underline">Teachers</span></h2>
     <p class="teachers-text secondary-text">Discover our team of dedicated educators, committed to guiding you on your journey to
         English proficiency with personalized and engaging instruction</p>
@@ -111,11 +191,10 @@
             </div>
         </li>
     </ul>
-
-    </div>
+  </div>
 </section>
       
-      <section id="reviews">
+      <section class="section" id="reviews">
   <div class="container">
     <h2 class="section-heading">
       What our <span class="brand-underline">students</span> say
@@ -188,7 +267,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
   <div class="container">
     <p class="footer-desc">
       Made with ✨ by

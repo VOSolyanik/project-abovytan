@@ -3,9 +3,10 @@
 
   --charcoal-black-rgb: 18, 20, 23;
   --charcoal-black-color: rgb(var(--charcoal-black-rgb));
-  --white-color: #fff;
   --white-color-rgb: 255, 255, 255;
-  --green-color: #4dc274;
+  --white-color: #fff;
+  --green-rgb: 77, 194, 116;
+  --green-color: rgb(var(--green-rgb));
   --green-pressed-color: #38ae5f;
   --light-green-color: #d4fde1;
   --light-green-underline: #bee8cc;
@@ -16,7 +17,7 @@
   --primary-bg-color: var(--white-color);
 
   --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-duration: 250ms;
+  --transition-duration: 300ms;
 }
 
 html {

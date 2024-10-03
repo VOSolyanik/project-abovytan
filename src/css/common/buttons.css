@@ -4,6 +4,7 @@
   align-items: center;
   padding: 14px 32px;
   transition: background-color var(--transition-duration);
+  border: none;
   border-radius: 12px;
   font-size: 14px;
   font-weight: 700;
@@ -21,7 +22,6 @@
 
 .btn-primary {
   background-color: var(--green-color);
-  border: 1px solid var(--green-color);
   color: var(--white-color);
 }
 
@@ -31,13 +31,13 @@
 }
 
 .btn-secondary {
+  box-shadow: inset 0 0 0 1px rgba(var(--white-color-rgb), 0.4);
   background-color: var(--green-color);
-  border: 1px solid var(--white-color);
   color: var(--white-color);
 }
 
 .btn-secondary:hover,
-.btn-primary:focus {
+.btn-secondary:focus {
   background-color: var(--white-color);
   color: var(--green-color);
 }

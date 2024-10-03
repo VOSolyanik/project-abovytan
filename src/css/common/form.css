@@ -41,7 +41,7 @@
     outline: transparent;
 }
 
-.form-comment:hover, .form-comment:focus, .form-comment:active {
+.form-comment:hover, .form-comment:focus {
     border-color: var(--green-color);
 }
 

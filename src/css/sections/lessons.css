@@ -37,17 +37,7 @@
   }
 }
 .lessons-list-item .btn {
-  max-width: 295px;
-}
-@media only screen and (min-width: 768px) {
-  .lessons-list-item .btn {
-    max-width: 304px;
-  }
-}
-@media only screen and (min-width: 1152px) {
-  .lessons-list-item .btn {
-    max-width: 256px;
-  }
+  width: 100%;
 }
 .lessons-list-heading {
   font-size: 20px;

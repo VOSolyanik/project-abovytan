@@ -5,7 +5,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.714;
-  padding: 14px 87px;
+  padding: 14px 32px;
   border-radius: 12px;
   white-space: nowrap;
   transition: background-color var(--transition-duration)
@@ -15,7 +15,7 @@
   .btn {
     font-size: 18px;
     line-height: 1.555;
-    padding: 16px 64px;
+    padding: 16px 40px;
   }
 }
 .btn-primary {
@@ -23,7 +23,8 @@
   background-color: var(--green-color);
   border: 1px solid var(--green-color);
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: var(--green-pressed-color);
 }
 .btn-secondary {
@@ -31,7 +32,8 @@
   background-color: var(--green-color);
   border: 1px solid var(--white-color);
 }
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-primary:focus {
   color: var(--green-color);
   background-color: var(--white-color);
 }

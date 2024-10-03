@@ -38,11 +38,13 @@
     width: 100%;
     resize: none;
     line-height: 1.29;
+    outline: transparent;
 }
 
-.form-comment:hover, .form-comment:focus {
+.form-comment:hover, .form-comment:focus, .form-comment:active {
     border-color: var(--green-color);
 }
+
 
 .form-comment::placeholder {
     font-weight: 400;

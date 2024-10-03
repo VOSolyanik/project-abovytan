@@ -101,7 +101,6 @@
   margin-bottom: 40px;
 
   span {
-    /* Need add new color to :root */
     color: var(--secondary-green-color, #bee8cc);
   }
 }
@@ -136,8 +135,7 @@
 }
 .hero-link:hover,
 .hero-link:focus {
-  /* Need add new color to :root */
-  background: var(--green-hover-color, #38ae5f);
+  background: var(--green-pressed-color, #38ae5f);
 }
 @media screen and (min-width: 768px) {
   .hero-link {
@@ -155,15 +153,15 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: #38ae5f;
-  background-color: white;
+  color: var(--green-pressed-color, #38ae5f);
+  background-color: var(--white-color);
   border-radius: 50%;
   cursor: pointer;
 }
 .hero-scroll-down:hover,
 .hero-scroll-down:focus {
-  background-color: var(--green-hover-color, #38ae5f);
-  color: #fff;
+  background-color: var(--green-pressed-color, #38ae5f);
+  color: var(--white-color);
 }
 @media screen and (min-width: 768px) {
   .hero-scroll-down {

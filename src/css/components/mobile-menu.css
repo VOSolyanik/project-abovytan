@@ -79,7 +79,7 @@
   height: 100dvh;
   background-color: rgba(var(--charcoal-black-rgb), 0);
   pointer-events: none;
-  transition: background-color var(--transition-duration)s var(--transition-function);
+  transition: background-color var(--transition-duration) var(--transition-function);
 }
 
 .mobile-menu-panel.is-open + .mobile-menu-backdrop {

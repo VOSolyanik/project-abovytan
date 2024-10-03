@@ -12,9 +12,10 @@
     refs.openMenuBtn.addEventListener('click', toggleMenu);
     refs.closeMenuBtn.addEventListener('click', toggleMenu);
     refs.backdrop.addEventListener('click', closeMenu);
-
-    window.navigator.addEventListener('navigate', function () {
-      closeMenu();
+    refs.menu.addEventListener('click', (e) => {
+      if (e.target.nodeName === 'A') {
+        closeMenu();
+      }
     });
 
     function toggleMenu() {

@@ -19,18 +19,18 @@
 }
 
 .teachers-list-item-photo {
-  border-radius: 50%;
   width: 150px;
   height: 150px;
   margin-bottom: 16px;
+  border-radius: 50%;
 }
 
 .teachers-list-item-name {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--charcoal-black-color);
   margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--charcoal-black-color);
+  text-align: center;
+  letter-spacing: -0.02em;
 }

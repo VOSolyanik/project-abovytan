@@ -1,0 +1,310 @@
+.application .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.application-text {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .application-text {
+    margin-bottom: 64px;
+    max-width: 586px;
+  }
+}
+
+@media only screen and (min-width: 1152px) {
+  .application-content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.application-decor {
+    border-radius: 30px;
+    width: 492px;
+    height: 578px;
+    background-color: var(--green-color);
+    margin-right: 32px;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+@media only screen and (max-width: 1151px) {
+  .application-decor {
+    display: none;
+  }
+}
+
+.application-decor-picture {
+    width: 597px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-bottom: 20px;
+    overflow: hidden;  
+    
+}
+
+.application-decor-photo {
+    height: 537px;
+    object-fit: cover;
+}
+
+.application-decor-title {
+    margin-bottom: 8px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--white-color);
+}
+
+p.application-decor-text {
+    margin-bottom: 40px;
+    width: 452px;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.application-form {
+    max-width: 335px;
+}
+
+@media only screen and (min-width: 768px) {
+  .application-form {
+    max-width: 500px;
+  }
+}
+
+.application-input {
+    border: 1px solid rgba(var(--charcoal-black-rgb), 0.1);
+    border-radius: 12px;
+    padding: 16px 0px 16px 18px;
+    height: 50px;
+    display: block;
+    width: 100%;
+    outline: transparent;
+    background-color: transparent;
+    margin-bottom: 18px;
+}
+
+.application-input:hover, .application-input:focus {
+    border-color: var(--green-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .application-input {
+    height: 56px;
+  }
+}
+
+.application-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--charcoal-black-color);
+}
+
+.application-comment {
+    border: 1px solid rgba(var(--charcoal-black-rgb), 0.1);
+    border-radius: 12px;
+    padding-top: 16px;
+    padding-left: 18px;
+    width: 100%;
+    height: 94px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.application-comment:hover, .application-comment:focus {
+    border-color: var(--green-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .application-comment {
+    height: 104px;
+  }
+}
+
+@media only screen and (min-width: 1152px) {
+  .application-comment {
+    margin-bottom: 32px;
+  }
+}
+
+.application-comment::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--charcoal-black-color);
+}
+
+.application-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: minwidthpx) {
+  .application-choice {
+    margin-bottom: 32px;
+  }
+}
+
+.application-choice-title {
+    margin-bottom: 14px;
+}
+
+@media only screen and (min-width: 1152px) {
+  .application-choice-title {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .application-choice-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.application-choice-item {
+    display: flex;
+    align-items: center; 
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: var(--charcoal-black-color);
+}
+
+.application-choice-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .application-choice-item {
+    margin-right: 16px;
+  }
+
+  .application-choice-item:not(:last-child) {
+    margin-bottom: 0;
+}
+}
+
+.application-choice-radio {
+    display: none;
+}
+
+.custom-radio {
+    display: inline-block;
+    border: 2px solid rgba(var(--charcoal-black-rgb), 0.2);
+    margin-right: 8px;
+    position: relative;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.application-choice-radio:checked + .custom-radio {
+    border-color: var(--green-color);
+}
+
+.application-choice-radio:checked + .custom-radio::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--green-color);
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+.application-button {
+    width: 100%;
+    height: 52px;
+    margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .application-button {
+    height: 60px;
+  }
+}
+
+.application-button-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    color: var(--charcoal-lite);
+}
+
+.privacy-policy-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 375px) {
+  .new-line {
+    display: block;
+  }
+}
+
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.714;
+  padding: 14px 87px;
+  border-radius: 12px;
+  white-space: nowrap;
+  transition: background-color var(--transition-duration)
+    var(--transition-function);
+}
+@media only screen and (min-width: 768px) {
+  .btn {
+    font-size: 18px;
+    line-height: 1.555;
+    padding: 16px 64px;
+  }
+}
+.btn-primary {
+  color: var(--white-color);
+  background-color: var(--green-color);
+  border: 1px solid var(--green-color);
+}
+.btn-primary:hover {
+  background-color: var(--green-pressed-color);
+}
+.btn-secondary {
+  color: var(--white-color);
+  background-color: var(--green-color);
+  border: 1px solid var(--white-color);
+}
+.btn-secondary:hover {
+  color: var(--green-color);
+  background-color: var(--white-color);
+}

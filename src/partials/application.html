@@ -1,0 +1,114 @@
+<section class="section application" id="leave-application">
+  <div class="container">
+    <h2 class="application-title section-heading">
+      Leave an <span class="brand-underline">application</span>
+    </h2>
+    <p class="application-text secondary-text">
+      Please use the form below to contact us. Enter your name, email, and
+      message and we'll get back to you shortly.
+    </p>
+    <div class="application-content">
+      <div class="application-decor">
+        <div class="application-decor-picture">
+            <img
+                srcset="images/application/application-girl.jpg 1x, images/application/application-girl@2x.jpg 2x"
+                src="images/application/application-girl.jpg"
+                alt="Studying girl"
+                width="597"
+                height="537"
+                class="application-decor-photo"
+              />
+        </div>
+        <h2 class="application-decor-title">1000</h2>
+        <p class="application-decor-text">of our online English language lessons! This journey has been full of discovery, growth and unforgettable moments, and we are happy to share this joyful event with you.</p>
+      </div>
+      <form class="application-form" autocomplete="off">
+        <input
+          name="user-name"
+          type="text"
+          class="application-input"
+          autofocus
+          placeholder="Name"
+          minlength="2"
+          required
+        />
+        <input
+          name="userEmail"
+          type="email"
+          class="application-input"
+          placeholder="Email"
+          required
+        />
+        <input
+          name="phone"
+          type="tel"
+          class="application-input"
+          placeholder="Phone"
+          pattern="\+?[0-9]{10,15}"
+          required
+        />
+        <textarea
+          class="application-comment"
+          name="user-comment"
+          placeholder="Comment"
+        ></textarea>
+        <div class="application-choice">
+          <h3 class="application-choice-title">Choose a teacher</h3>
+          <div class="application-choice-list">
+            <label class="application-choice-item">
+              <input
+                type="radio"
+                class="application-choice-radio"
+                name="teacher"
+                value="maria"
+                checked
+                required
+              />
+              <span class="custom-radio"></span>
+              Maria
+            </label>
+            <label class="application-choice-item">
+              <input
+                type="radio"
+                class="application-choice-radio"
+                name="teacher"
+                value="artem"
+              />
+              <span class="custom-radio"></span>
+              Artem
+            </label>
+            <label class="application-choice-item">
+              <input
+                type="radio"
+                class="application-choice-radio"
+                name="teacher"
+                value="ilona"
+              />
+              <span class="custom-radio"></span>
+              Ilona
+            </label>
+            <label class="application-choice-item">
+              <input
+                type="radio"
+                class="application-choice-radio"
+                name="teacher"
+                value="volodymyr"
+              />
+              <span class="custom-radio"></span>
+              Volodymyr
+            </label>
+          </div>
+        </div>
+        <button class="application-button btn btn-primary" type="submit">
+          Send
+        </button>
+        <p class="application-button-text">
+          By clicking on “Send” button, you agree to our
+          <a href="privacy.com" class="privacy-policy-link" target="_blank"
+            >Privacy Policy</a
+          >, <span class="new-line">and allow Promodo to use this information for marketing purposes.</span>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

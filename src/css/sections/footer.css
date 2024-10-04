@@ -64,10 +64,6 @@
   color: var(--green-color);
 }
 
-.accent {
-  transition: color var(--transition-duration) var(--transition-function);
-}
-
 .footer .nav-logo:hover .accent,
 .footer .nav-logo:focus .accent {
   color: var(--white-color);

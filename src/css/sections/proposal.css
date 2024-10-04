@@ -26,6 +26,8 @@
 
 .proposal-container-info::after,
 .proposal-container-info::before {
+  top: 0;
+  left: 0;
   content: '';
   position: absolute;
   width: 100%;
@@ -34,16 +36,12 @@
 }
 
 .proposal-container-info::after {
-  top: 0px;
-  left: 0px;
   transform: rotate(-11deg);
   background-color: var(--light-green-color);
   z-index: -1;
 }
 
 .proposal-container-info::before {
-  top: 0px;
-  left: 0px;
   transform: rotate(9deg);
   background-color: var(--white-color);
   opacity: 50%;
@@ -178,6 +176,10 @@
 }
 
 @media only screen and (min-width: 1152px) {
+  .proposal-container {
+    padding: 0;
+  }
+
   .proposal-section-heading {
     margin: 64px 0 72px 64px;
     font-size: 60px;
@@ -195,13 +197,5 @@
   .proposal-content-list {
     margin: 0 20px 39px 0;
     max-width: 654px;
-  }
-
-  .books-photo {
-    display: block;
-  }
-
-  .proposal-button {
-    max-width: 306px;
   }
 }

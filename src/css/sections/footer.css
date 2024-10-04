@@ -69,11 +69,6 @@
   color: var(--white-color);
 }
 
-.footer .nav-logo:hover .accent,
-.footer .nav-logo:focus .accent {
-  color: var(--white-color);
-}
-
 .contacts {
   margin: 12px 0 40px;
 }

@@ -50,7 +50,7 @@
   position: relative;
   z-index: 4;
   padding: 40px 20px 40px;
-  background-color: white;
+  background-color: var(--white-color);
   border-radius: 16px;
 }
 

@@ -57,6 +57,7 @@
 .footer .nav-logo {
   margin-top: -8px;
   color: var(--white-color);
+  transition: color var(--transition-duration) var(--transition-function);
 }
 
 .footer .nav-logo:hover,
@@ -64,9 +65,8 @@
   color: var(--green-color);
 }
 
-.footer .nav-logo:hover .accent,
-.footer .nav-logo:focus .accent {
-  color: var(--white-color);
+.accent {
+  transition: color var(--transition-duration) var(--transition-function);
 }
 
 .footer .nav-logo:hover .accent,
@@ -94,6 +94,7 @@
   font-weight: 600;
   color: var(--white-color);
   text-decoration: none;
+  transition: text-decoration var(--transition-duration) var(--transition-function);
 }
 
 .contact-link:hover,
@@ -167,6 +168,7 @@
   line-height: 1.3;
   color: rgba(var(--white-color-rgb), 0.6);
   text-decoration: none;
+  transition: text-decoration var(--transition-duration) var(--transition-function);
 }
 
 .policy-link:hover,

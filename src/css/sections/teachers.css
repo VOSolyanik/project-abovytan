@@ -1,3 +1,11 @@
+@media only screen and (min-width: 768px) {
+  .teachers .container > .secondary-text {
+    max-width: 709px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .teachers-list-item.card-set-item {
   --items: 1;
 }

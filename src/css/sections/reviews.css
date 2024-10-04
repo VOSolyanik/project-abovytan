@@ -1,3 +1,11 @@
+@media only screen and (min-width: 768px) {
+  .reviews .container > .secondary-text {
+    max-width: 647px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .review-cards-list {
   display: flex;
   flex-direction: column;

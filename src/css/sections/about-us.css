@@ -1,5 +1,5 @@
-@media only screen and (min-width: 1152px) {
-  .about-us .supporting-text {
+@media only screen and (min-width: 768px) {
+  .about-us .container > .secondary-text {
     max-width: 658px;
     margin-right: auto;
     margin-left: auto;

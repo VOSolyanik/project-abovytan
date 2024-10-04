@@ -18,8 +18,8 @@
   background-image: linear-gradient(357deg,
       rgba(0, 0, 0, 0.4) 39.23%,
       rgba(0, 0, 0, 0) 66.28%),
-    image-set(url('/images/hero/bg_mob.webp') type('image/webp'),
-      url('/images/hero/bg_mob.jpg') type('image/jpg'));
+    image-set(url(/images/hero/bg_mob.webp) type('image/webp'),
+      url(/images/hero/bg_mob.jpg) type('image/jpg'));
 }
 
 @media (min-resolution: 192dpi) {
@@ -27,8 +27,8 @@
     background-image: linear-gradient(357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
         rgba(0, 0, 0, 0) 66.28%),
-      image-set(url('/images/hero/bg_mob@2x.webp') type('image/webp'),
-        url('/images/hero/bg_mob@2x.jpg') type('image/jpg'));
+      image-set(url(/images/hero/bg_mob@2x.webp) type('image/webp'),
+        url(/images/hero/bg_mob@2x.jpg) type('image/jpg'));
   }
 }
 
@@ -41,8 +41,8 @@
     background-image: linear-gradient(357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
         rgba(0, 0, 0, 0) 66.28%),
-      image-set(url('/images/hero/bg_tab.webp') type('image/webp'),
-        url('/images/hero/bg_tab.jpg') type('image/jpg'));
+      image-set(url(/images/hero/bg_tab.webp) type('image/webp'),
+        url(/images/hero/bg_tab.jpg) type('image/jpg'));
   }
 }
 
@@ -51,8 +51,8 @@
     background-image: linear-gradient(357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
         rgba(0, 0, 0, 0) 66.28%),
-      image-set(url('/images/hero/bg_tab@2x.webp') type('image/webp'),
-        url('/images/hero/bg_tab@2x.jpg') type('image/jpg'));
+      image-set(url(/images/hero/bg_tab@2x.webp) type('image/webp'),
+        url(/images/hero/bg_tab@2x.jpg) type('image/jpg'));
   }
 }
 
@@ -62,8 +62,8 @@
     background-image: linear-gradient(357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
         rgba(0, 0, 0, 0) 66.28%),
-      image-set(url('/images/hero/bg_desk.webp') type('image/webp'),
-        url('/images/hero/bg_desk.jpg') type('image/jpg'));
+      image-set(url(/images/hero/bg_desk.webp) type('image/webp'),
+        url(/images/hero/bg_desk.jpg) type('image/jpg'));
   }
 }
 
@@ -72,8 +72,8 @@
     background-image: linear-gradient(357deg,
         rgba(0, 0, 0, 0.4) 39.23%,
         rgba(0, 0, 0, 0) 66.28%),
-      image-set(url('/images/hero/bg_desk@2x.webp') type('image/webp'),
-        url('/images/hero/bg_desk@2x.jpg') type('image/jpg'));
+      image-set(url(/images/hero/bg_desk@2x.webp) type('image/webp'),
+        url(/images/hero/bg_desk@2x.jpg) type('image/jpg'));
   }
 }
 

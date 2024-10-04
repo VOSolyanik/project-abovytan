@@ -56,7 +56,7 @@
   display: block;
   position: absolute;
   z-index: -1;
-  top: 26px;
+  top: 24px;
   width: 100%;
   height: 12px;
   background-color: var(--light-green-underline);
@@ -66,6 +66,7 @@
 @media only screen and (min-width: 768px) {
   .brand-underline::after {
     top: 35px;
+    height: 20px;
   }
 }
 

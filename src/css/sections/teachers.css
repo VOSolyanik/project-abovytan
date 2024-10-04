@@ -1,7 +1,3 @@
-.teachers {
-  font-family: var(--primary-font);
-}
-
 .teachers-list-item.card-set-item {
   --items: 1;
 }

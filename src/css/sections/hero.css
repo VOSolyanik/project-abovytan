@@ -162,8 +162,3 @@
 .hero-scroll-down:focus .hero-icon {
   fill: var(--white-color);
 }
-
-
-.hero-icon {
-  fill: var(--green-color);
-}

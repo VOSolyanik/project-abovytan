@@ -1,0 +1,165 @@
+<section class="section application" id="leave-application">
+  <div class="container">
+    <h2 class="section-heading">
+      Leave an <span class="brand-underline">application</span>
+    </h2>
+    <p class="secondary-text">
+      Please use the form below to contact us. Enter your name, email, and
+      message, and we'll get back to you shortly.
+    </p>
+    <div class="application-content">
+      <div class="application-decor">
+        <div class="application-decor-picture">
+          <img
+            srcset="
+              images/application/application-girl.jpg    1x,
+              images/application/application-girl@2x.jpg 2x
+            "
+            src="images/application/application-girl.jpg"
+            alt="Studying girl"
+            width="597px"
+            height="895px"
+            class="application-decor-photo"
+          />
+        </div>
+        <div class="application-decor-content">
+          <h2 class="application-decor-title">1000</h2>
+          <p class="application-decor-text">
+            of our online English language lessons! This journey has been full of
+            discovery, growth, and unforgettable moments, and we are happy to
+            share this joyful event with you.
+          </p>
+        </div>
+      </div>
+      <form class="application-form" autocomplete="off">
+        <fieldset class="form-fields">
+          <legend class="visually-hidden">
+            Application Form
+          </legend>
+
+          <div class="form-group">
+            <label for="user-name" class="visually-hidden">
+              Name
+            </label>
+            <input
+              id="user-name"
+              name="userName"
+              type="text"
+              class="form-input"
+              placeholder="Name"
+              minlength="2"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="user-email" class="visually-hidden">
+              Email
+            </label>
+            <input
+              id="user-email"
+              name="userEmail"
+              type="email"
+              class="form-input"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="visually-hidden">
+              Phone
+            </label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              class="form-input"
+              placeholder="Phone"
+              pattern="\+?[0-9]{10,15}"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label
+              for="user-comment"
+              class="visually-hidden"
+              >Comment</label
+            >
+            <textarea
+              id="user-comment"
+              class="form-input"
+              name="userComment"
+              placeholder="Comment"
+              rows="3"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="application-choice form-fields">
+          <legend class="application-choice-title">Choose a teacher</legend>
+          <div class="application-choice-group">
+            <label class="form-label">
+              <input
+                type="radio"
+                class="visually-hidden"
+                name="teacher"
+                value="maria"
+                checked
+                required
+              />
+              <span class="form-radio"></span>
+              Maria
+            </label>
+            <label class="form-label">
+              <input
+                type="radio"
+                class="visually-hidden"
+                name="teacher"
+                value="artem"
+              />
+              <span class="form-radio"></span>
+              Artem
+            </label>
+            <label class="form-label">
+              <input
+                type="radio"
+                class="visually-hidden"
+                name="teacher"
+                value="ilona"
+              />
+              <span class="form-radio"></span>
+              Ilona
+            </label>
+            <label class="form-label">
+              <input
+                type="radio"
+                class="visually-hidden"
+                name="teacher"
+                value="volodymyr"
+              />
+              <span class="form-radio"></span>
+              Volodymyr
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="application-button btn btn-primary" type="submit">
+          Send
+        </button>
+
+        <p class="application-privacy">
+          By clicking on the "Send" button, you agree to our
+          <a href="privacy.com" class="privacy-link" target="_blank"
+            >Privacy Policy</a
+          >,
+          <span class="new-line"
+            >and allow Promodo to use this information for marketing
+            purposes.</span
+          >
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

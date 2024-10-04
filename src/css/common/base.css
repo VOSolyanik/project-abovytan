@@ -11,7 +11,6 @@
   --light-green-color: #d4fde1;
   --light-green-underline: #bee8cc;
   --gray-color: #f3f5f6;
-  --charcoal-lite: rgba(var(--charcoal-black-rgb), 0.5);
 
   --primary-text-color: var(--charcoal-black-color);
   --primary-bg-color: var(--white-color);

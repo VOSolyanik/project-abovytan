@@ -34,7 +34,7 @@
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 1.714;
-  color: rgba(var(--charcoal-black-rgb), 0.5);
+  color: var(--charcoal-light);
   text-align: center;
 }
 

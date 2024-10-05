@@ -42,15 +42,24 @@
 
 .proposal-content-wrapper::after {
   z-index: 2;
-  transform: rotate(0deg);
+  transform: rotate(-11deg);
   background-color: var(--light-green-color);
 }
 
 .proposal-content-wrapper::before {
   z-index: 3;
   opacity: 50%;
-  transform: rotate(0deg);
+  transform: rotate(9deg);
   background-color: var(--white-color);
+}
+@media only screen and (min-width: 1152px) {
+  .proposal-content-wrapper::after {
+    transform: rotate(0deg);
+  }
+  
+  .proposal-content-wrapper::before {
+    transform: rotate(0deg);
+  }
 }
 .proposal-content-wrapper.js-animate::after {
   transform: rotate(-11deg);

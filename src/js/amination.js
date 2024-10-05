@@ -32,3 +32,62 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(item);
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const listItems = document.querySelectorAll(".about-us-list li");
+
+    listItems.forEach(item => {
+        item.style.visibility = "hidden";
+    });
+
+    const observer = new IntersectionObserver(
+        function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    target.style.visibility = "visible";
+
+                    target.classList.add("animate__slideInLeft");
+                    observer.unobserve(target);
+                }
+            });
+        },
+        {
+            threshold: 1.0 
+        }
+    );
+
+    listItems.forEach(item => {
+        observer.observe(item);
+    });
+});
+
+
+
+document.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.brand-underline');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(element => {
+        const elementRect = element.getBoundingClientRect();
+
+        if (elementRect.top < windowHeight * 0.5) {
+            element.classList.add('js-animate');
+        }
+    });
+});
+
+
+document.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.proposal-content-wrapper');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(element => {
+        const elementRect = element.getBoundingClientRect();
+
+        if (elementRect.top >= 0 && elementRect.bottom <= windowHeight) {
+            element.classList.add('js-animate');
+        }
+    });
+});
+

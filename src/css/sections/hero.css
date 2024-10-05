@@ -1,0 +1,164 @@
+@media only screen and (min-width: 1152px) {
+  .hero .container {
+    padding: 0;
+  }
+}
+
+.hero-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 709px;
+  border-radius: 16px;
+  background-color: rgba(var(--charcoal-black-rgb), 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(357deg,
+      rgba(0, 0, 0, 0.4) 39.23%,
+      rgba(0, 0, 0, 0) 66.28%),
+    image-set(url(/images/hero/bg_mob.webp) type('image/webp'),
+      url(/images/hero/bg_mob.jpg) type('image/jpg'));
+}
+
+@media (min-resolution: 192dpi) {
+  .hero-wrapper {
+    background-image: linear-gradient(357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%),
+      image-set(url(/images/hero/bg_mob@2x.webp) type('image/webp'),
+        url(/images/hero/bg_mob@2x.jpg) type('image/jpg'));
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-wrapper {
+    justify-content: start;
+    align-items: center;
+    height: 704px;
+    border-radius: 30px;
+    background-image: linear-gradient(357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%),
+      image-set(url(/images/hero/bg_tab.webp) type('image/webp'),
+        url(/images/hero/bg_tab.jpg) type('image/jpg'));
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-wrapper {
+    background-image: linear-gradient(357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%),
+      image-set(url(/images/hero/bg_tab@2x.webp) type('image/webp'),
+        url(/images/hero/bg_tab@2x.jpg) type('image/jpg'));
+  }
+}
+
+@media only screen and (min-width: 1152px) {
+  .hero-wrapper {
+    height: 629px;
+    background-image: linear-gradient(357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%),
+      image-set(url(/images/hero/bg_desk.webp) type('image/webp'),
+        url(/images/hero/bg_desk.jpg) type('image/jpg'));
+  }
+}
+
+@media only screen and (min-width: 1152px) and (min-resolution: 192dpi) {
+  .hero-wrapper {
+    background-image: linear-gradient(357deg,
+        rgba(0, 0, 0, 0.4) 39.23%,
+        rgba(0, 0, 0, 0) 66.28%),
+      image-set(url(/images/hero/bg_desk@2x.webp) type('image/webp'),
+        url(/images/hero/bg_desk@2x.jpg) type('image/jpg'));
+  }
+}
+
+.hero-content {
+  padding: 0 20px 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-content {
+    max-width: 552px;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1152px) {
+  .hero-content {
+    max-width: 692px;
+    padding: 0 64px;
+  }
+}
+
+.hero-title {
+  color: var(--white-color);
+  font-size: 38px;
+  line-height: 1.052;
+  margin-bottom: 40px;
+
+  span {
+    color: var(--light-green-underline);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 1.166;
+  }
+}
+
+.hero-content .btn-primary {
+  max-width: 306px;
+}
+
+.hero-scroll-down {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  margin-left: auto;
+  margin-top: 20px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--green-pressed-color, #38ae5f);
+  background-color: var(--white-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--transition-function), color var(--transition-duration) var(--transition-function);
+}
+
+@media screen and (min-width: 768px) {
+  .hero-scroll-down {
+    width: 48px;
+    height: 48px;
+    right: 32px;
+    bottom: 32px;
+  }
+}
+
+.hero-scroll-down:hover,
+.hero-scroll-down:focus {
+  background-color: var(--green-pressed-color);
+  color: var(--white-color);
+}
+
+.hero-icon {
+  fill: var(--green-color);
+  transition: fill var(--transition-duration) var(--transition-function);
+}
+
+
+.hero-scroll-down:hover .hero-icon,
+.hero-scroll-down:focus .hero-icon {
+  fill: var(--white-color);
+}

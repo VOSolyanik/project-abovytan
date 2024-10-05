@@ -1,8 +1,8 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 32px;
   row-gap: 40px;
+  column-gap: 32px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -12,10 +12,9 @@
 }
 
 .card-set-item {
-  width: calc((100% - 32px * (var(--items) - 1)) / var(--items));
   display: flex;
   flex-direction: column;
-  align-items: center; 
   justify-content: center;
+  align-items: center;
+  width: calc((100% - 32px * (var(--items) - 1)) / var(--items));
 }
-

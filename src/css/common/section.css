@@ -61,6 +61,7 @@
   height: 12px;
   background-color: var(--light-green-underline);
   border-radius: 8px;
+  transition: width var(--transition-duration) var(--transition-function);
 }
 
 @media only screen and (min-width: 768px) {
@@ -73,5 +74,10 @@
 @media only screen and (min-width: 1152px) {
   .brand-underline::after {
     top: 31px;
+    width: 0;
+  }
+
+  .brand-underline.js-animate::after {
+    width: 100%;
   }
 }

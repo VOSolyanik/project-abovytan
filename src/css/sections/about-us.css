@@ -11,6 +11,7 @@
   grid-template-columns: 1fr;
   gap: 20px;
   counter-reset: list-counter;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
@@ -31,6 +32,7 @@
   background-color: var(--gray-color);
   border-radius: 16px;
   counter-increment: list-counter;
+  --animate-delay: 0.3s;
 }
 
 .about-us-list li:before {

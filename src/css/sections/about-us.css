@@ -1,5 +1,5 @@
 @media only screen and (min-width: 768px) {
-  .about-us .container > .secondary-text {
+  .about-us .container>.secondary-text {
     max-width: 658px;
     margin-right: auto;
     margin-left: auto;
@@ -11,7 +11,6 @@
   grid-template-columns: 1fr;
   gap: 20px;
   counter-reset: list-counter;
-  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {

@@ -3,7 +3,7 @@
 
   --charcoal-black-rgb: 18, 20, 23;
   --charcoal-black-color: rgb(var(--charcoal-black-rgb));
-  --white-color-rgb: 255, 255, 255;
+  --white-rgb: 255, 255, 255;
   --white-color: #fff;
   --green-rgb: 77, 194, 116;
   --green-color: rgb(var(--green-rgb));
@@ -13,6 +13,7 @@
   --gray-color: #f3f5f6;
   --charcoal-light: rgba(var(--charcoal-black-rgb), 0.5);
 
+  --primary-text-rgb: var(--charcoal-black-rgb);
   --primary-text-color: var(--charcoal-black-color);
   --primary-bg-color: var(--white-color);
 

@@ -55,7 +55,7 @@
 }
 
 .lessons-list-item.accent .secondary-text {
-  color: rgba(var(--white-color-rgb), 0.7);
+  color: rgba(var(--white-rgb), 0.7);
 }
 
 .lessons-list-item .secondary-text {

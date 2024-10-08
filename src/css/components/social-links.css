@@ -19,7 +19,7 @@
   height: 42px;
   transition: border-color var(--transition-duration) var(--transition-function);
   cursor: pointer;
-  border: 1px solid rgba(var(--charcoal-black-rgb), 0.1);
+  border: 1px solid rgba(var(--primary-text-rgb), 0.1);
   border-radius: 10px;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .social-icon {
-  fill: var(--charcoal-black-color);
+  fill: var(--primary-text-color);
   display: inline-block;
   transition: fill var(--transition-duration) var(--transition-function);
 }

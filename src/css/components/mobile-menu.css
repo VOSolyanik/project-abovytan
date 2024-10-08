@@ -17,6 +17,7 @@
 }
 
 @media only screen and (min-width: 768px) {
+
   .mobile-menu-btn,
   .menu-close-btn {
     width: 40px;
@@ -24,6 +25,7 @@
     margin: -6px 0;
   }
 }
+
 @media only screen and (min-width: 1152px) {
   .mobile-menu-btn {
     display: none;
@@ -37,8 +39,9 @@
 }
 
 .mobile-menu-btn .burger-icon {
-  stroke: var(--charcoal-black-color);
+  stroke: var(--primary-text-color);
 }
+
 .menu-close-btn .close-icon {
   stroke: var(--white-color);
 }
@@ -59,6 +62,7 @@
   transform: translateX(100%);
   transition: transform var(--transition-duration) var(--transition-function);
 }
+
 @media only screen and (min-width: 768px) {
   .mobile-menu-panel {
     padding: 68px 32px 32px;
@@ -82,7 +86,7 @@
   transition: background-color var(--transition-duration) var(--transition-function);
 }
 
-.mobile-menu-panel.is-open + .mobile-menu-backdrop {
+.mobile-menu-panel.is-open+.mobile-menu-backdrop {
   background-color: rgba(var(--charcoal-black-rgb), 0.6);
   pointer-events: all;
 }

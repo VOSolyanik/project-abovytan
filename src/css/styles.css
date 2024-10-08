@@ -31,3 +31,6 @@
 @import url('./sections/application.css');
 @import url('./sections/reviews.css');
 @import url('./sections/footer.css');
+
+/* Dark mode */
+@import url('./common/dark-mode.css');

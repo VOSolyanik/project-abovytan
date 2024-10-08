@@ -35,7 +35,7 @@
   font-size: 20px;
   font-weight: 700;
   line-height: 1.35;
-  color: var(--charcoal-black-color);
+  color: var(--primary-text-color);
 }
 
 .nav-logo .accent {
@@ -50,7 +50,7 @@
 
 .nav-logo:hover .accent,
 .nav-logo:focus .accent {
-  color: var(--charcoal-black-color);
+  color: var(--primary-text-color);
 }
 
 .nav-menu {
@@ -72,7 +72,7 @@
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
-  color: var(--charcoal-black-color);
+  color: var(--primary-text-color);
 }
 
 .nav-link:after {

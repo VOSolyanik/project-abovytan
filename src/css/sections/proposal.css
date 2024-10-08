@@ -50,7 +50,7 @@
   z-index: 3;
   opacity: 50%;
   transform: rotate(9deg);
-  background-color: var(--white-color);
+  background-color: var(--primary-bg-color);
 }
 @media only screen and (min-width: 1152px) {
   .proposal-content-wrapper::after {
@@ -73,7 +73,7 @@
   position: relative;
   z-index: 4;
   padding: 40px 20px 40px;
-  background-color: var(--white-color);
+  background-color: var(--primary-bg-color);
   border-radius: 16px;
 }
 
